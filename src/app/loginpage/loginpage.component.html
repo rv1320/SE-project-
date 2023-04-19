@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Tax Billing System</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+
+		form {
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 400px;
+			box-shadow: 0 0 10px #ccc;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		input[type="text"], input[type="password"] {
+			display: block;
+			margin: 10px 0;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			cursor: pointer;
+			width: 100%;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #666;
+		}
+
+		p {
+			text-align: center;
+			margin-top: 20px;
+			color: #666;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<h1>House Tax Billing System</h1>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" #uname>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" #pass >
+		<input type="submit" (click)="verify(uname.value, pass.value)" value="Login" >
+	</form>
+
+	<p>Don't have an account? <a href="#">Sign up here</a></p>
+</body>
+</html>
+
